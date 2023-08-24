@@ -20,7 +20,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'gradient-start': 'orange-500',
+                        'gradient-end': 'red-500',
                     }
                 }
             }
@@ -39,7 +40,7 @@
         <div class="hero min-h-screen bg-base-200">
             <div class="hero-content flex-col lg:flex-row-reverse">
                 <div>
-                    <img src="/images//banner.png" class="max-w-sm " />
+                    <img src="/images//banner.png" class=" " />
                     <!-- Rating Badge -->
                     <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60 rounded-md">
                         <i class="fa-solid fa-star text-4xl text-amber-400"></i>
@@ -55,7 +56,9 @@
                         Tea House</h1>
                     <p class="py-6 text-lg font-medium">Tea and Botanical Solutions Supplier Give Optimum Satisfaction
                         To Your Taste Buds.</p>
-                    <button class="btn bg-orange-600 text-white">Get Started</button>
+                    <button class="btn bg-gradient-to-r from-orange-500 to-red-500 text-white text-xl font-bold">Explore More
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -69,7 +72,7 @@
                 Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
                 randomised words which don't look even slightly believable. </p>
             <!-- feature tea Card container -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-x-6 md:gap-y-6 lg:gap-x-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-6 md:gap-x-6 md:gap-y-6 lg:gap-x-6">
                 <!-- first card -->
                 <div class="card p-8 bg-base-100 shadow-xl bg-slate-200">
                     <figure><img src="/images//tea-1.png" alt="Shoes" /></figure>
@@ -236,9 +239,55 @@
         </section>
     </main>
 
-    <footer>
-
-    </footer>
+    <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+        <div class="flex justify-between my-24">
+            <img src="images/cup.png" alt="">
+           <p class="gap-6">
+            <span>Ready to get strated?</span>
+            <button class="btn bg-gradient-to-r from-orange-500 to-red-500 text-white text-xl font-bold ">Get Started</button>
+           </p>
+        </div>
+      <div class="footer ">
+        <div>
+            <span class="footer-title">Services</span> 
+            <a class="link link-hover">Branding</a> 
+            <a class="link link-hover">Design</a> 
+            <a class="link link-hover">Marketing</a> 
+            <a class="link link-hover">Advertisement</a>
+          </div> 
+          <div>
+            <span class="footer-title">Company</span> 
+            <a class="link link-hover">About us</a> 
+            <a class="link link-hover">Contact</a> 
+            <a class="link link-hover">Jobs</a> 
+            <a class="link link-hover">Press kit</a>
+          </div> 
+          <div>
+            <span class="footer-title">Legal</span> 
+            <a class="link link-hover">Terms of use</a> 
+            <a class="link link-hover">Privacy policy</a> 
+            <a class="link link-hover">Cookie policy</a>
+          </div> 
+          <div>
+            <span class="footer-title">Newsletter</span> 
+            <div class="form-control w-80">
+              <label class="label">
+                <span class="label-text">Enter your email address</span>
+              </label> 
+              <div class="relative">
+                <input type="text" placeholder="username@site.com" class=" py-4 bg-transparent border-b-2 border-black outline-none" /> 
+                <button class="btn  text-white absolute top-0 right-0 rounded-full bg-gradient-to-r from-orange-500 to-red-500">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+      </div>
+        <div class="mt-10 text-center">
+            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+          </div>
+      </footer>
+     
 </body>
 
 </html>
